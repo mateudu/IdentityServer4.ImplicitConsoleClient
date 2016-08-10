@@ -19,7 +19,7 @@ namespace ImplicitConsoleClient
         public static void Main(string[] args)
         {
             var client = new ImplicitClient(IdentityServerHostUrl, ClientId, RedirectUri, ResponseType, Scope, State, Nonce);
-            var result = client.GetResponseTokenAsync(@"a14122011@o2.pl", @"Lublin2015!").Result;
+            var result = client.GetResponseTokenAsync(@"username@example.com", @"P@ssw0rd").Result;
         }
     }
 
